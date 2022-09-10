@@ -1,4 +1,5 @@
 # ITMO Data Product Hack "Green Team"
+Service for imputation in plant genom
 ## Deploy
 docker-compose up -d --build
 
