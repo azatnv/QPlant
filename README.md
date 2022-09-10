@@ -1,5 +1,5 @@
--- Deploy
+## Deploy
 docker-compose up -d --build
 
--- Switch off
+## Switch off
 docker-compose down -v
