@@ -2,8 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import requests
-import allel
-import gzip
 import re
 
 number_chromosomes = {
@@ -13,8 +11,8 @@ number_chromosomes = {
 }
 crops = ("Cucumis sativus", "Zea mays", "Triticum aestivum")
 
-backend_url = "http://localhost:8502/upload"
-# backend_url = "http://fastapi:8502/upload"
+# backend_url = "http://localhost:8502/upload"
+backend_url = "http://fastapi:8502/upload"
 
 def upload(url: str, crop: str, region: str, file):
     files = {"vcf": ("name.vcf.gz", file, 'text/plain')}
